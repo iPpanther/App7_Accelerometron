@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D220991B2248C8F8000440A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220991A2248C8F8000440A3 /* AppDelegate.swift */; };
-		D220991D2248C8F8000440A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220991C2248C8F8000440A3 /* ViewController.swift */; };
+		D220991D2248C8F8000440A3 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220991C2248C8F8000440A3 /* ListTableViewController.swift */; };
 		D22099202248C8F8000440A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D220991E2248C8F8000440A3 /* Main.storyboard */; };
 		D22099222248C8F9000440A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22099212248C8F9000440A3 /* Assets.xcassets */; };
 		D22099252248C8F9000440A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22099232248C8F9000440A3 /* LaunchScreen.storyboard */; };
+		D220992F2248CE0F000440A3 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220992E2248CE0F000440A3 /* ParallaxCell.swift */; };
+		D22099312248D207000440A3 /* Image+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22099302248D207000440A3 /* Image+Names.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D22099172248C8F8000440A3 /* Accelerometron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accelerometron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D220991A2248C8F8000440A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D220991C2248C8F8000440A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D220991C2248C8F8000440A3 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		D220991F2248C8F8000440A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D22099212248C8F9000440A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D22099242248C8F9000440A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D22099262248C8F9000440A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D220992E2248CE0F000440A3 /* ParallaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		D22099302248D207000440A3 /* Image+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Names.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		D22099192248C8F8000440A3 /* Accelerometron */ = {
 			isa = PBXGroup;
 			children = (
+				D220992D2248CDDA000440A3 /* View */,
+				D220992C2248CDC9000440A3 /* Controller */,
 				D220991A2248C8F8000440A3 /* AppDelegate.swift */,
-				D220991C2248C8F8000440A3 /* ViewController.swift */,
 				D220991E2248C8F8000440A3 /* Main.storyboard */,
 				D22099212248C8F9000440A3 /* Assets.xcassets */,
 				D22099232248C8F9000440A3 /* LaunchScreen.storyboard */,
 				D22099262248C8F9000440A3 /* Info.plist */,
+				D22099302248D207000440A3 /* Image+Names.swift */,
 			);
 			path = Accelerometron;
+			sourceTree = "<group>";
+		};
+		D220992C2248CDC9000440A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D220991C2248C8F8000440A3 /* ListTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D220992D2248CDDA000440A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D220992E2248CE0F000440A3 /* ParallaxCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D220991D2248C8F8000440A3 /* ViewController.swift in Sources */,
+				D220992F2248CE0F000440A3 /* ParallaxCell.swift in Sources */,
+				D220991D2248C8F8000440A3 /* ListTableViewController.swift in Sources */,
+				D22099312248D207000440A3 /* Image+Names.swift in Sources */,
 				D220991B2248C8F8000440A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
